@@ -11,7 +11,7 @@
 	<body>
 		<button onclick="startGame({x: 0, y: 0}, 70, boardCanvas);">Start New Game</button>
 		<form action="ai_vs_ai.html">
-			<input type="submit" value="AI vs. AI" />
+			<input type="submit" value="AI vs. AI"/>
 		</form>
 		<button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button><br/><br/>
 		<svg id="checkersBoard" width="800" height="800" ></svg>
@@ -20,7 +20,5 @@
 			var boardCanvas = d3.select("#checkersBoard");
 			startGame({x: 0, y: 0}, 70, boardCanvas);
 		</script>
-
-		<p>paragraph</p>
 	</body>
 </html>

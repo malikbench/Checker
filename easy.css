@@ -1,17 +1,23 @@
 body {
-    background-color: lightyellow;
+    background-color: #303030;
     font-family: Helvetica;
 }
 
-button {
+button, input {
     border-radius: 5px;
     font-size: 110%;
-    background-color: black;
-    color: white;
+    /*background-color: black;
+    color: white;*/
+    background-color: white;
+    color: black;
     border: none;
 }
 
-button:hover {
+button:hover, input:hover {
     box-shadow: 2px 2px 5px 5px gray;
     cursor: pointer;
+}
+
+form {
+    margin-bottom: 0px;
 }
