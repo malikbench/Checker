@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/model.js"></script>
+    <script src="scripts/view.js"></script>
+    <script src="scripts/controller.js"></script>
+
+    <script src="scripts/AI_vs_AI.js"></script>
+</head>
+<body>
+<button onclick="startGame({x: 0, y: 0}, 70, boardCanvas);">Start New Game</button>
+<button onclick="launch()"> launch </button>
+<button onclick="nextMove()">next move</button>
+<button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button><br/><br/>
+<svg id="checkersBoard" width="750" height="750" ></svg>
+
+<script type="text/javascript">
+    var boardCanvas = d3.select("#checkersBoard");
+    startGame({x: 0, y: 0}, 70, boardCanvas);
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    background-color: lightyellow;
+    font-family: Helvetica;
+}
+
+button {
+    border-radius: 5px;
+    font-size: 110%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px 5px gray;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+- normal.js <=> normal.js
+
+    - use same code for 'easy' and 'hard' (negamax)
+
+- ai vs ai :
+    -   remove drag from trackpad
+
+- difficulty level : easy, medium, hard
+    - easy : AI picks worst move
+    - medium : AI makes random moves ?
+    - hard : AI  follows minimax algorithm
+
+
+- model
+- view
+- controller

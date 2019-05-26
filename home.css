@@ -1,0 +1,52 @@
+body {
+    background-color: lightyellow;
+    font-family: Helvetica;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+#bg {
+    display: inline-block;
+}
+
+#damier {
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+#list {
+    background-color: firebrick;
+    width: 200px;
+    height: 160px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 6px;
+    padding: 10px;
+    padding-top: 0px;
+    margin-left: 15px;
+}
+
+a {
+    color: white;
+}
+
+#right {
+    float: right;
+    background-color: firebrick;
+    padding: 10px;
+    height: 480px;
+    color: white;
+    border-radius: 6px;
+    margin-right: 15px;
+    box-shadow: 5px 5px 5px 5px gray;
+
+}
+
+#global {
+    text-align: center;
+}
