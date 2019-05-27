@@ -256,7 +256,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
         .attr("y", function(d) { return mapCellToCoordinates(origin, cellWidth, d).y})
         .attr("height", cellWidth)
         .attr("width", cellWidth)
-        .style("fill", function(d) { if (d.state == empty) return "lightgrey"; else return "grey"})
+        .style("fill", function(d) { if (d.state == empty) return /*"lightgrey"*/ "tan"; else return /*"grey"*/ "tan"})
         .style("stroke", "black")
         .style("stroke-width", "1px");
 
@@ -278,7 +278,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
         .attr("r", cellWidth/2)
         .attr("cx", function(d) { var x = mapCellToCoordinates(origin, cellWidth, d).x; return x+cellWidth/2;})
         .attr("cy", function(d) { var y = mapCellToCoordinates(origin, cellWidth, d).y; return y+cellWidth/2;})
-        .style("fill", function(d) { if (d.state == white) return "white"; else return "black";})
+        .style("fill", function(d) { if (d.state == white) return "maroon"; else return "black";})
         /*.style("border-style", function() { return "solid";})
         .style("border-color", function(d) { if (d.state == white) return "black"; else return "white";})*/
         .call(drag)

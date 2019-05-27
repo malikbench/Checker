@@ -8,12 +8,13 @@
 		<script src="scripts/normal.js"></script>
 		<link rel="stylesheet" href="easy.css" />
 	</head>
-	<body>
-		<button onclick="startGame({x: 0, y: 0}, 70, boardCanvas);">Start New Game</button>
-		<form action="ai_vs_ai.html">
-			<input type="submit" value="AI vs. AI"/>
-		</form>
-		<button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button><br/><br/>
+
+	<button onclick="startGame({x: 0, y: 0}, 70, boardCanvas);">Redemarrer la partie Humain vs Joueur</button>
+	<a href="ai_vs_ai.html"> <input type="button" value="Commencer une nouvelle partie IA vs IA"> </a>
+	<a href="home.html"> <input type="button" value="Page d'acceuil "> </a>
+	</br>
+
+		<button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button><br/>
 		<svg id="checkersBoard" width="800" height="800" ></svg>
 
 		<script type="text/javascript">

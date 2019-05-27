@@ -1,5 +1,6 @@
 body {
-    background-color: #303030;
+    background-color: lemonchiffon;
+    background-image:url(images/image3.jpg);
     font-family: Helvetica;
 }
 
@@ -8,12 +9,13 @@ button, input {
     font-size: 110%;
     /*background-color: black;
     color: white;*/
-    background-color: white;
+    background-image: url("images/image6.jpg");
     color: black;
     border: none;
 }
 
 button:hover, input:hover {
+    background-image: url("images/image2.jpg");
     box-shadow: 2px 2px 5px 5px gray;
     cursor: pointer;
 }

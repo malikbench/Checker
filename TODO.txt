@@ -11,6 +11,4 @@
     - hard : AI  follows minimax algorithm
 
 
-- model
-- view
-- controller
+

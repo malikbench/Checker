@@ -20,7 +20,8 @@ function drawBoard(origin, cellWidth, boardCanvas) {
 		.attr("y", function(d) { return mapCellToCoordinates(origin, cellWidth, d).y})
 		.attr("height", cellWidth)
 		.attr("width", cellWidth)
-		.style("fill", function(d) { if (d.state == empty) return /*"lightgrey"*/ "lightyellow"; else return /*"grey"*/ "firebrick"})
+		//.style.backgroundImage = "url(/images/image1.png)"
+		.style("fill", function(d) { if (d.state == empty) return /*"lightgrey"*/ "tan"; else return /*"grey"*/ "tan"})
 		.style("stroke", "black")
 		.style("stroke-width", "1px");
 
@@ -44,7 +45,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
 		.attr("r", cellWidth/2)
 		.attr("cx", function(d) { var x = mapCellToCoordinates(origin, cellWidth, d).x; return x+cellWidth/2;})
 		.attr("cy", function(d) { var y = mapCellToCoordinates(origin, cellWidth, d).y; return y+cellWidth/2;})
-		.style("fill", function(d) { if (d.state == white) return "white" ; else return "black" ;})
+		.style("fill", function(d) { if (d.state == white) return "maroon" ; else return "black" ;})
 		/*.style("border-style", function() { return "solid";})
         .style("border-color", function(d) { if (d.state == white) return "black"; else return "white";})*/
 		.call(drag)
@@ -55,7 +56,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
 	d3.select("body").append("div")
 		.attr("id", "divScoreboard")
 		.style("font-size", "36")
-		.html("SCOREBOARD")
+		.html("SCOREBOARD </br> Humain vs IA")
 
 	d3.select("#divScoreboard")
 		.append("div")
@@ -77,13 +78,13 @@ function drawBoard(origin, cellWidth, boardCanvas) {
 
 	d3.select("#divScoreBoard")
 		.style("margin-left", "800px")
-		.style("color", "white")
+		.style("color", "tan")
 		.style("margin-top", "-760px")
         .style("border-radius", "6px")
         .style("padding", "10px")
         .style("width", "400px")
-        .style("background-color", "firebrick")
-        .style("box-shadow", "5px 5px 15px 1px white")
+        .style("background-color", "")
+        .style("box-shadow", "5px 5px 15px 1px tan")
 
 
 	d3.select("#divScoreboard")
@@ -91,11 +92,11 @@ function drawBoard(origin, cellWidth, boardCanvas) {
 		.attr("id", "instructions")
 		.style("font-size", "18")
 		.style("margin-top", "30px")
-		.html("You play as white. Drag a piece to start the game!"+"&#013;&#010;"
+		.html("Vous avez les pions rouges. Faites glissez une piece pour commencer le jeu !"+"&#013;&#010;"
 			+    "")
 
 	//d3.select("#instructions").append('br')
-	d3.select("#instructions").append("p").html("Difficulty level")
+	//d3.select("#instructions").append("p").html("Difficulty level")
 
 	;
 

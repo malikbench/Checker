@@ -13,7 +13,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
         .attr("y", function(d) { return mapCellToCoordinates(origin, cellWidth, d).y})
         .attr("height", cellWidth)
         .attr("width", cellWidth)
-        .style("fill", function(d) { if (d.state == empty) return "lightgrey"; else return "grey"})
+        .style("fill", function(d) { if (d.state == empty) return "tan"; else return "tan"})
         .style("stroke", "black")
         .style("stroke-width", "1px");
 
@@ -37,7 +37,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
         .attr("r", cellWidth/2)
         .attr("cx", function(d) { var x = mapCellToCoordinates(origin, cellWidth, d).x; return x+cellWidth/2;})
         .attr("cy", function(d) { var y = mapCellToCoordinates(origin, cellWidth, d).y; return y+cellWidth/2;})
-        .style("fill", function(d) { if (d.state == white) return "white"; else return "black";})
+        .style("fill", function(d) { if (d.state == white) return "maroon"; else return "black";})
         /*.style("border-style", function() { return "solid";})
         .style("border-color", function(d) { if (d.state == white) return "black"; else return "white";})*/
         .call(drag)
@@ -48,7 +48,7 @@ function drawBoard(origin, cellWidth, boardCanvas) {
     d3.select("body").append("div")
         .attr("id", "divScoreboard")
         .style("font-size", "36")
-        .html("SCOREBOARD")
+        .html("SCOREBOARD </br> IA vs IA")
 
     d3.select("#divScoreboard")
         .append("div")
@@ -70,24 +70,24 @@ function drawBoard(origin, cellWidth, boardCanvas) {
 
     d3.select("#divScoreBoard")
         .style("margin-left", "800px")
-        .style("color", "white")
+        .style("color", "tan")
         .style("margin-top", "-750px")
         .style("border-radius", "6px")
         .style("padding", "10px")
         .style("width", "400px")
-        .style("background-color", "firebrick")
-        .style("box-shadow", "5px 5px 15px 1px white")
+        .style("background-color", "")
+        .style("box-shadow", "5px 5px 15px 1px tan")
 
     d3.select("#divScoreboard")
         .append("div")
         .attr("id", "instructions")
         .style("font-size", "18")
         .style("margin-top", "30px")
-        .html("The"+"&quot"+"launch"+"&quot"+" button will start a non interruptible AI vs. AI game"+"&#013;&#010;"
-                +    "The"+"&quot"+"next move"+"&quot"+" button will only perform the AI move who's turn it is")
+        .html("Cliquez sur le bouton Demarrer la partie pour commencer </br>" +
+            "le bouton Coup par coup vous permet de voir Le coup de l'IA auquel c'est le tour de jouer")
 
     //d3.select("#instructions").append('br')
-    d3.select("#instructions").append("p").html("Difficulty level")
+    //d3.select("#instructions").append("p").html("Difficulty level")
 
     ;
 

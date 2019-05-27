@@ -1,11 +1,12 @@
 body {
-    background-color: lightyellow;
+    background-image: url("images/image3.jpg");
     font-family: Helvetica;
 }
 
 h1 {
     text-align: center;
     position: relative;
+    color: white;
 }
 
 #bg {
@@ -17,7 +18,7 @@ h1 {
 }
 
 #list {
-    background-color: firebrick;
+    background-color: maroon;
     width: 200px;
     height: 160px;
     display: inline-block;
@@ -37,7 +38,7 @@ a {
 
 #right {
     float: right;
-    background-color: firebrick;
+    background-color: maroon;
     padding: 10px;
     height: 480px;
     color: white;

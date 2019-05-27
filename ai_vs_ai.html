@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="easy.css" />
 </head>
 <body>
-<button onclick="startGame({x: 0, y: 0}, 70, boardCanvas);">Start New Game</button>
-<button onclick="launch()"> launch </button>
-<button onclick="nextMove()">next move</button>
+<button onclick="launch()"> Demarrer la partie </button>
+<button onclick="nextMove()">Jouer en coup par coup</button>
+<a href="ai_vs_ai.html"> <input type="button" value="Recommencer"> </a>
+<a href="index_normal.html"> <input type="button" value="Humain vs IA"> </a>
+<a href="home.html"> <input type="button" value="Page d'acceuil"> </a>
 <button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button><br/><br/>
 <svg id="checkersBoard" width="750" height="750" ></svg>
 
